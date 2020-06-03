@@ -1,0 +1,96 @@
+/* vars */
+:root{
+  --header-bg-color: #333333;
+  --header-elem-bg-color: #444
+}
+
+/* HEADER */
+
+
+header{
+  background-color:var(--header-bg-color);
+  padding: 0px 16px;
+  display: grid;
+  grid-template-columns: 20% auto 30%;
+  align-items: center;
+}
+
+
+/* border para test */
+/* header>div{
+  border: 2px solid;
+  width: 100%;
+} */
+
+/* menu */
+header .menu{
+  display: grid;
+  grid-template-columns: 40px auto;
+}
+
+header .cmdMenu{
+  background-color: inherit;
+  width: 40px;
+  color:white;
+  font-size: large;
+  cursor: pointer;
+}
+
+header .home a{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: auto;
+}
+
+header .home img{
+  height: 26px;
+  cursor: pointer;
+}
+
+/* search bar */
+
+header .search{
+  display: flex;
+  justify-content: center;
+  
+}
+
+header .search input {
+  background-color:var(--header-elem-bg-color);
+  font-size: 20px;
+  border: none;
+  outline: none;
+  width: 60%;
+}
+
+
+header .search button {
+  background-color:#555;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: grey;
+}
+
+header .search button:hover {
+  color: #ccc;
+}
+
+/* user control */
+header .user-access{
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .user-access button{
+  background-color: inherit;
+  color: white;
+  font-size: 20px;
+}
+
+header .user-access img{
+  border-radius: 50%;
+  height: 32px;
+}

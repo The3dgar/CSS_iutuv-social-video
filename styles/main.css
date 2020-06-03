@@ -1,0 +1,23 @@
+@import "header.css";
+body{
+  margin: 0px
+}
+
+.main{
+  display: grid;
+  grid-template-rows: 56px auto
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 16% auto;
+  height: calc(100vh - 56px);
+  background-color: #feb236;
+}
+
+button{
+  border: none;
+  outline: none;
+}
+
+
