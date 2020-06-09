@@ -1,0 +1,49 @@
+:root{
+  --body-bg-color: #222;
+  --body-elem-bg-color: #555
+}
+
+.container {
+  padding: 16px 0px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: var(--body-bg-color) ;
+  overflow-x: hidden;
+
+}
+
+.body-elem iframe{
+  width: 320px;
+  height: 180px;
+}
+
+.video-info{
+  display: grid;
+  width: 300px;
+  grid-template-columns: 40px auto ;
+  padding: 12px 0px;
+}
+
+.video-info img{
+  height:32px;
+  border-radius: 50%;
+}
+
+.video-title{
+  color: white;
+  font-size: 1em;
+}
+
+.video-channel{
+  color: var(--body-elem-bg-color);
+}
+
+.video-stadistic{
+  color: var(--body-elem-bg-color);
+}
+
+.video-channel:hover{
+  color: white
+}

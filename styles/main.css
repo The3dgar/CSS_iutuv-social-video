@@ -1,5 +1,6 @@
 @import "header.css";
 @import "sidebar.css";
+@import "container.css";
 
 body{
   margin: 0px;
@@ -15,7 +16,7 @@ body{
 
 .body {
   display: grid;
-  grid-template-columns: 16% auto;
+  grid-template-columns: 250px auto;
   height: calc(100vh - 56px);
   background-color: #feb236;
 }
@@ -33,6 +34,6 @@ a{
 @media (max-width:900px){
   .body{
     display: grid;
-    grid-template-columns: 34% auto;
+    grid-template-columns: 250px auto;
   }
 }
