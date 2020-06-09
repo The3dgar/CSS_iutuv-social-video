@@ -1,6 +1,11 @@
 @import "header.css";
+@import "sidebar.css";
+
 body{
-  margin: 0px
+  margin: 0px;
+  padding: 0px;
+  font-family: Abel, verdana;
+  font-size: 1em;
 }
 
 .main{
@@ -20,4 +25,14 @@ button{
   outline: none;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
+@media (max-width:900px){
+  .body{
+    display: grid;
+    grid-template-columns: 34% auto;
+  }
+}

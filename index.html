@@ -17,11 +17,11 @@
   <div class="main">
     <header>
       <div class="menu">
-        <button class="cmdMenu"><i class="fa fa-bars"></i></button>
+        <button class="cmdMenu" onclick="openSidebar()" id="cmdMenu"><i
+            class="fa fa-bars"></i></button>
         <div class="home">
           <a href="/"><img src="./public/cam.svg" alt="Iutuv Logo"></a>
         </div>
-
       </div>
       <div class="search">
         <input type="text" placeholder="Search">
@@ -37,10 +37,72 @@
     </header>
 
     <div class="body">
-      <div class="sidebar">sidebar</div>
-      <div class="container">body</div>
+      <section class="sidebar" id="sidebar">
+        <div class="sidebar-head">
+          <button class="cmdMenuClose" onclick="closeSidebar()" id="cmdMenuClose"><i
+              class="fa fa-bars"></i></button>
+          <div class="home">
+            <a href="/"><img src="./public/cam.svg" alt="Iutuv Logo"></a>
+          </div>
+        </div>
+        <div class="sidebar-body">
+          <div class="sidebar-section">
+            <div class="sidebar-elem isActive"><i class="fa fa-home"></i> <span>
+                Principal
+              </span> </div>
+            <div class="sidebar-elem"><i class="fas fa-fire"></i> <span>
+                Tendencias
+              </span> </div>
+            <div class="sidebar-elem"><i class="fas fa-user-plus"></i> <span>
+                Suscripciones
+              </span> </div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-elem"><i class="fas fa-photo-video"></i><span>Biblioteca</span>
+            </div>
+            <div class="sidebar-elem"><i class="fas fa-history"></i><span>Historial</span>
+            </div>
+            <div class="sidebar-elem"><i class="fas fa-video"></i><span>Tus videos</span>
+            </div>
+            <div class="sidebar-elem"><i class="fas fa-arrow-down"></i><span>Mostrar más</span>
+            </div>
+
+          </div>
+          <div class="sidebar-section suscriptions">
+            <div class="sidebar-elem-header">SUSCRIPCIONES</div>
+            <div class="sidebar-elem">
+              <img src="./public/rick.jpg" alt="channel_1" class="sidebar-content-img">
+              <span>Rick Sanchez</span>
+            </div>
+            <div class="sidebar-elem">
+              <img src="./public/morty.png" alt="channel_1" class="sidebar-content-img">
+              <span>Morty Smith</span>
+            </div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-elem-header">
+              MÁS DE IUTUV
+            </div>
+            <div class="sidebar-elem">
+              <i class="fab fa-github"></i>
+              <span><a href="https://github.com/The3dgar">GitHub </a> </span> </div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-about">
+              <span><a href="#">About</a></span>
+              <span><a href="#">IUTUV</a></span>
+              <span><a href="#">Weather</a></span>
+              <span><a href="#">News</a></span>
+              <span><a href="#">Legal</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">body</section>
     </div>
   </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
