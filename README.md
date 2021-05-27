@@ -1,4 +1,6 @@
-# css-app_iutuv_social_video
-pure css and html, test for a social media app
+# This is a basic CSS project 
 
-just clone this repo
+Try to simulate Youtube homepage
+I make this repo just for fun! 😁
+
+![Image of home Screen](public/home.png)
